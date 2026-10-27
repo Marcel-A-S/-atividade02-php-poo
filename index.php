@@ -1,10 +1,11 @@
 <?php
 // Carregue as classes veiculo, carro e moto
-// Criando os objeto carros ,motos e veiculos 
+
 require_once __DIR__ . '/src/Veiculo.php';
 require_once __DIR__ . '/src/Carro.php';
 require_once __DIR__ . '/src/Moto.php';
 
+// Criando os objeto carros ,motos e veiculos
 $carro = new Carro('volkswagen', 'Fusca', 1970, 2);
 $moto = new Moto('Innocent', ' Lambretta', 1971, 120)
 
@@ -30,7 +31,7 @@ $moto = new Moto('Innocent', ' Lambretta', 1971, 120)
                 
                 <h2>
                     <!-- Exiba marca e modelo do carro -->
-                     
+
                      <?= $carro-> getMarca() . ' ' . $carro->getModelo(); ?>
                 </h2>
                 
@@ -50,7 +51,7 @@ $moto = new Moto('Innocent', ' Lambretta', 1971, 120)
                 <p class="preco">
                     Diária: R$ <!-- Exiba a diária formatada com duas casas decimais -->
 
-                    <?= number_format($carro->getDiaria(), 2, ',', '.') ?>
+                    <?= number_format($carro->getCalcularDiaria(), 2, ',', '.') ?>
                 </p>
             </article>
 
@@ -76,7 +77,7 @@ $moto = new Moto('Innocent', ' Lambretta', 1971, 120)
                 <p class="preco">
                     Diária: R$ <!-- Exiba a diária formatada com duas casas decimais -->
 
-                    <?= number_format($moto->getDiaria(), 2, ',', '.') ?>
+                    <?= number_format($moto->getCalcularDiaria(), 2, ',', '.') ?>
                 </p>
             </article>
         </section>
