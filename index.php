@@ -6,8 +6,8 @@ require_once __DIR__ . '/src/Carro.php';
 require_once __DIR__ . '/src/Moto.php';
 
 // Criando os objeto carros ,motos e veiculos
-$carro = new Carro('volkswagen', 'Fusca', 1970, 2);
-$moto = new Moto('Innocent', ' Lambretta', 1971, 120)
+$carro = new Carro('volkswagen', 'Fusca', 1970, 4);
+$moto = new Moto('Innocent', ' Lambretta', 1971, 300)
 
 ?>
 <!DOCTYPE html>
