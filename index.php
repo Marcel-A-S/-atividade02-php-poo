@@ -1,11 +1,11 @@
 <?php
-// Carregue as classes veiculo, carro e moto
+// Carregando as classes veiculo, carro e moto
 
 require_once __DIR__ . '/src/Veiculo.php';
 require_once __DIR__ . '/src/Carro.php';
 require_once __DIR__ . '/src/Moto.php';
 
-// Criando os objeto carros ,motos e veiculos
+// Criando os objetos carro ,moto e veiculos
 $carro = new Carro('volkswagen', 'Fusca', 1970, 4);
 $moto = new Moto('Innocent', ' Lambretta', 1971, 300)
 
