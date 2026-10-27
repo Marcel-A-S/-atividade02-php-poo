@@ -1,6 +1,13 @@
 <?php
-// Carregue as classes usando require_once.
-// Crie um objeto Carro e um objeto Moto com os dados indicados no enunciado.
+// Carregue as classes veiculo, carro e moto
+// Criando os objeto carros ,motos e veiculos 
+require_once __DIR__ . '/src/Veiculo.php';
+require_once __DIR__ . '/src/Carro.php';
+require_once __DIR__ . '/src/Moto.php';
+
+$carro = new Carro('volkswagen', 'Fusca', 1970, 2);
+$moto = new Moto('Innocent', ' Lambretta', 1971, 120)
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -23,18 +30,27 @@
                 
                 <h2>
                     <!-- Exiba marca e modelo do carro -->
+                     
+                     <?= $carro-> getMarca() . ' ' . $carro->getModelo(); ?>
                 </h2>
                 
                 <p class="detalhe">
                     Ano: <!-- Exiba o ano -->
+
+                    <?= $carro-> getAno(); ?>
+
                 </p>
                 
                 <p class="detalhe">
                     Portas: <!-- Exiba a quantidade de portas -->
+
+                    <?= $carro-> getQuantidadePortas(); ?>
                 </p>
                 
                 <p class="preco">
                     Diária: R$ <!-- Exiba a diária formatada com duas casas decimais -->
+
+                    <?= number_format($carro->getDiaria(), 2, ',', '.') ?>
                 </p>
             </article>
 
@@ -42,17 +58,25 @@
                 <span class="tipo">Moto</span>
                 <h2>
                     <!-- Exiba marca e modelo da moto -->
+
+                    <?= $moto-> getMarca() . ' ' . $moto->getModelo(); ?>
                 </h2>
 
                 <p class="detalhe">
                     Ano: <!-- Exiba o ano -->
+
+                    <?= $moto-> getAno(); ?>
                 </p>
                 
                 <p class="detalhe">
                     Cilindradas: <!-- Exiba as cilindradas -->
+
+                    <?= $moto-> getCilindradas(); ?>
                 </p>
                 <p class="preco">
                     Diária: R$ <!-- Exiba a diária formatada com duas casas decimais -->
+
+                    <?= number_format($moto->getDiaria(), 2, ',', '.') ?>
                 </p>
             </article>
         </section>

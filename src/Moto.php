@@ -5,26 +5,26 @@ require_once __DIR__ . '/Veiculo.php';
 
 class Moto extends Veiculo
 {
-    private int $;
+    private int $cilindradas;
 
     public function __construct(
-        string $,
-        string $,
-        int $,
-        int $
+        string $marca,
+        string $modelo,
+        int $ano,
+        int $cilindradas
     ) {
-        parent::__construct($, $, $);
+        parent::__construct($marca, $modelo, $ano);
 
-        $this-> = $;
+        $this-> cilindradas = $cilindradas;
     }
 
     public function getCilindradas(): int
     {
-        return $this->;
+        return $this->cilindradas;
     }
 
     public function calcularDiaria(): float
     {
-        return;
+        return 70.00;
     }
 }

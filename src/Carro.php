@@ -5,26 +5,36 @@ require_once __DIR__ . '/Veiculo.php';
 
 class Carro extends Veiculo
 {
-    private int $;
+    private int $quantidadePortas;
 
     public function __construct(
-        string $,
-        string $,
-        int $,
-        int $
+        string $marca,
+        string $modelo,
+        int $ano,
+        int $quantidadePortas
     ) {
-        parent::__construct($, $, $);
+        parent::__construct($marca, $modelo, $ano);
 
-        $this-> = $;
+        $this->quantidadePortas = $quantidadePortas;
     }
 
     public function getQuantidadePortas(): int
     {
-        return $this->;
+        return $this->quantidadePortas; }
+        
+     {
+        parent::__construct($marca, $modelo, $ano);
+
+        $this->quantidadePortas = $quantidadePortas;
+    }
+
+    public function getQuantidadePortas(): int
+    {
+        return $this->quantidadePortas;
     }
 
     public function calcularDiaria(): float
     {
-        return;
+        return 150.00;
     }
 }
