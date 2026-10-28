@@ -1,7 +1,11 @@
 
 <?php
 
+<<<<<<< Updated upstream
 require_once . '/Veiculo.php';
+=======
+require_once "Veiculo.php";
+>>>>>>> Stashed changes
 
 class Moto extends Veiculo
 {
