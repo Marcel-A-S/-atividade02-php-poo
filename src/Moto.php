@@ -1,7 +1,7 @@
 
 <?php
 
-require_once __DIR__ . '/Veiculo.php';
+require_once . '/Veiculo.php';
 
 class Moto extends Veiculo
 {
