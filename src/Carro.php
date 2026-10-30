@@ -1,4 +1,3 @@
-
 <?php
 
 require_once __DIR__ . '/Veiculo.php';
@@ -13,16 +12,6 @@ class Carro extends Veiculo
         int $ano,
         int $quantidadePortas
     ) {
-        parent::__construct($marca, $modelo, $ano);
-
-        $this->quantidadePortas = $quantidadePortas;
-    }
-
-    public function getQuantidadePortas(): int
-    {
-        return $this->quantidadePortas; }
-        
-     {
         parent::__construct($marca, $modelo, $ano);
 
         $this->quantidadePortas = $quantidadePortas;

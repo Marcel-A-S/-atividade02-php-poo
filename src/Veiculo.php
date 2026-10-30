@@ -7,7 +7,7 @@ abstract class Veiculo
     private string $modelo;
     private int $ano;
 
-    public function __construct (string $marca, string $modelo, int $ano); 
+    public function __construct (string $marca, string $modelo, int $ano) 
     
     {
         $this->marca = $marca;
