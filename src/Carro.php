@@ -12,6 +12,7 @@ class Carro extends Veiculo
         int $ano,
         int $quantidadePortas
     ) {
+        
         parent::__construct($marca, $modelo, $ano);
 
         $this->quantidadePortas = $quantidadePortas;
@@ -19,11 +20,13 @@ class Carro extends Veiculo
 
     public function getQuantidadePortas(): int
     {
+
         return $this->quantidadePortas;
     }
 
     public function calcularDiaria(): float
     {
+
         return 150.00;
     }
 }
