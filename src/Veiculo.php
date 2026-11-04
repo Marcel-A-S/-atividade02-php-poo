@@ -17,17 +17,17 @@ abstract class Veiculo
 
     public function getMarca(): string
     {
-        return $this->marca;
+        return $this-> marca;
     }
 
     public function getModelo(): string
     {
-        return $this->modelo;
+        return $this-> modelo;
     }
 
     public function getAno(): int
     {
-        return $this->ano;
+        return $this-> ano;
     }
 
     abstract public function calcularDiaria(): float;
